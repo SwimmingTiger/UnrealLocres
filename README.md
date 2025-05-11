@@ -11,13 +11,13 @@ Go to [releases](https://github.com/akintos/UnrealLocres/releases/latest) and do
 
 ### Export
 ```
-usage: UnrealLocres.exe export locres_file_path [-f {csv,pot}] [-o output_path]
+usage: UnrealLocres.exe export locres_file_path [-f {csv,pot,json}] [-o output_path]
 
 positional arguments:
   locres_file_path        Input locres file path
 
 optional arguments:
-  -f, --format {csv,pot}  Output file format (csv, pot)
+  -f, --format {csv,pot,json}  Output file format (csv, pot, json)
   -o                      Output file path (default: {locres_file_path}.{format})
 ```
 Export locres file. Default output format is csv.
@@ -25,14 +25,14 @@ You should **never** change the key column.
 
 ### Import
 ```
-usage: UnrealLocres.exe import locres_file_path translation_file_path [-f {csv,pot}] [-o output_path]
+usage: UnrealLocres.exe import locres_file_path translation_file_path [-f {csv,pot,json}] [-o output_path]
 
 positional arguments:
   locres_file_path        Input locres file path
   translation_file_path   Input translation file path
 
 optional arguments:
-  -f, --format {csv,pot}  Translation file format (csv, pot)
+  -f, --format {csv,pot,json}  Translation file format (csv, pot, json)
   -o                      Output locres file path (default: {locres_file_path}.new)
 ```
 Import translation file into original locres file and create new translated locres file.
